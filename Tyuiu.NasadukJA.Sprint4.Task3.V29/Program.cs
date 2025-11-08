@@ -1,2 +1,34 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Tyuiu.NasadukJA.Sprint4.Task3.V29.Lib;
+
+// See https://aka.ms/new-console-template for more information
+DataService ds = new DataService();
+
+Console.Title = "Спринт #4 | Выполнила: Насадюк Ю. А. | СМАРТб-25-1";
+
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* Спринт #4                                                               *");
+Console.WriteLine("* Тема: Двумерные массивы (статический ввод)                              *");
+Console.WriteLine("* Задание #3                                                              *");
+Console.WriteLine("* Вариант #29                                                             *");
+Console.WriteLine("* Выполнила: Насадюк Юлия Андреевна | СМАРТб-25-1                         *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* УСЛОВИЕ:                                                                *");
+Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
+Console.WriteLine("* статическими значениями в диапазоне от 5 до 9. Найдите произведение     *");
+Console.WriteLine("* элементов в первом столбце массива. 9,9,8,6,9,  5,8,8,8,7,  6,5,9,7,9,  *");
+Console.WriteLine("* 7,7,9,7,8,  8,5,8,5,5,                                                  *");
+Console.WriteLine("*                                                                         *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+Console.WriteLine("***************************************************************************");
+
+
+
+
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+Console.WriteLine("***************************************************************************");
+
+
+
+Console.ReadKey();

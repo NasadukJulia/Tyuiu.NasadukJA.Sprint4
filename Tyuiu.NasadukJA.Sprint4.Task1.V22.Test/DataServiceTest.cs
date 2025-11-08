@@ -1,11 +1,13 @@
-﻿namespace Tyuiu.NasadukJA.Sprint4.Task1.V22.Test
+﻿using Tyuiu.NasadukJA.Sprint4.Task1.V22.Lib;
+
+namespace Tyuiu.NasadukJA.Sprint4.Task1.V22.Test
 {
     [TestClass]
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
-        {
+        public void ValidCalculate()
+        { 
         }
     }
 }
