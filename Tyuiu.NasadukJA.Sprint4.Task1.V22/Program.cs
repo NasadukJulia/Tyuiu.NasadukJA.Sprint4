@@ -21,13 +21,28 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
+Console.Write("Введите количество элементов массива: ");
+int len = Convert.ToInt32(Console.ReadLine());
 
+int[] numsArray = new int[len];
 
+for (int i = 0; i < len; i++)
+{
+    Console.Write("Введите значение " + i + "-го элемента массива: ");
+    numsArray[i] = Convert.ToInt32(Console.ReadLine());
+}
+Console.WriteLine();
+Console.WriteLine("Массив:");
+for (int i = 0; i < len; i++)
+{
+    Console.Write(numsArray[i] + "\t");
+}
+Console.WriteLine();
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-
+Console.WriteLine("Произведение нечётных элементов массива = " + ds.Calculate(numsArray));
 
 Console.ReadKey();
