@@ -22,13 +22,49 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
+Console.Write("Введите количество строк массива: ");
+int rows = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("Введите количество столбцов массива: ");
+int columns = Convert.ToInt32(Console.ReadLine());
 
+int[,] mtrx = new int[rows, columns];
 
+Console.WriteLine("Введите элементы массива:");
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < columns; j++)
+    {
+        Console.Write($"[{i},{j}] = ");
+        mtrx[i, j] = Convert.ToInt32(Console.ReadLine());
+    }
+}
+
+Console.WriteLine("Массив");
+
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < columns; j++)
+    {
+        Console.Write(mtrx[i, j] + "\t");
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine();
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
+int[,] res = ds.Calculate(mtrx);
 
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < columns; j++)
+    {
+        Console.Write(res[i, j] + "\t");
+    }
+    Console.WriteLine();
+}
 
 Console.ReadKey();
