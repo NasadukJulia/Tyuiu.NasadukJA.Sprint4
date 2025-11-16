@@ -6,7 +6,8 @@ namespace Tyuiu.NasadukJA.Sprint4.Task6.V15.Lib
     {
         public int Calculate(string[] array)
         {
-            
+            string[] mas = Array.FindAll(array, x => x.Length < 7);
+            return mas.Length;
         }
     }
 }
